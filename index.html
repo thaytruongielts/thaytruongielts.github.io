@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Thầy Trường IELTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #2d3748;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .lessons-section {
+            margin-top: 3rem;
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        .lessons-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .lesson-card {
+            display: flex;
+            align-items: center;
+            background-color: #edf2f7;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .lesson-icon {
+            font-size: 2.5rem;
+            margin-right: 1.5rem;
+            color: #4299e1;
+        }
+        .lesson-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .lesson-content p {
+            font-size: 1rem;
+            color: #718096;
+        }
+        .lesson-card a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .lesson-card a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        .lessons-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">Thầy Trường IELTS</h1>
+            <p class="subtitle">Chào mừng bạn đến với thư viện bài giảng Tiếng Anh tương tác!</p>
+        </header>
+
+        <section class="lessons-section">
+            <h2 class="lessons-title">Các Bài Giảng Của Tôi</h2>
+            <div class="lessons-grid">
+                <!-- Lesson 1: IELTS Reading T/F/NG -->
+                <div class="lesson-card">
+                    <span class="lesson-icon">📖</span>
+                    <div class="lesson-content">
+                        <h3>IELTS Reading: T/F/NG</h3>
+                        <p>Bài tập luyện tập True, False, Not Given</p>
+                        <a href="/skimming/ieltsreading.html" target="_blank">Xem ngay →</a>
+                    </div>
+                </div>
+                <!-- Lesson 2: IELTS Writing Task 1 -->
+                <div class="lesson-card">
+                    <span class="lesson-icon">📈</span>
+                    <div class="lesson-content">
+                        <h3>IELTS Writing Task 1</h3>
+                        <p>Chiến lược và luyện tập biểu đồ</p>
+                        <a href="/ielts-writing-task1.html" target="_blank">Xem ngay →</a>
+                    </div>
+                </div>
+                <!-- Lesson 3: PET Listening -->
+                <div class="lesson-card">
+                    <span class="lesson-icon">🎧</span>
+                    <div class="lesson-content">
+                        <h3>PET Listening</h3>
+                        <p>Bài tập tương tác có script và hiệu ứng</p>
+                        <a href="/pet-listening.html" target="_blank">Xem ngay →</a>
+                    </div>
+                </div>
+                <!-- Thêm các bài giảng khác vào đây -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
